@@ -59,6 +59,7 @@ namespace TheKruskalAlgorithm
 
         public void Add(Edge edge)
         {
+            i++;
             _graph.Add(edge);
         }
 
@@ -67,7 +68,6 @@ namespace TheKruskalAlgorithm
             int weight = 0;
             foreach (Edge edge in _graph)
             {
-                i++;
                 weight += edge.EdgeWeight;
             }
             return weight;
